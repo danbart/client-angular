@@ -1,0 +1,9 @@
+<div class="col-md-12" *ngIf="!car">
+  Cargando.... </div>
+<div class="col-md-12" *ngIf="car">
+  <h1>{{car.title}}</h1>
+  <p><strong *ngIf="car.status == 'true'">Este carro está a la venta</strong></p>
+  <p>Q {{car.price}}   </p>
+  <p>{{car.description}}
+  </p>
+</div>
